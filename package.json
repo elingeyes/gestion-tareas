@@ -1,0 +1,14 @@
+{
+  "name": "gestion-tareas",
+  "version": "1.0.0",
+  "description": "App para la gestion de tareas como una demo de tecnologia",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "El inge",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
