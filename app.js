@@ -27,8 +27,14 @@ app.use(morgan('dev'));
 
 // Ruta principal
 app.get('/', (req, res) => {
-    res.send('¡Bienvenido a al gestor de tareas!');
+    res.send('¡Bienvenido al gestor de tareas!');
   });
+
+  // Ruta para renderizar una vista utilizando EJS
+  app.get('/home', (req, res) => {
+    // Renderiza el archivo index.ejs y envía la respuesta HTML al cliente
+    res.render('index', { mensaje: '¡Bienvenido a al gestor de tareas!' });
+});
 
   // Iniciar el servidor
 app.listen(app.get('port'), () => {
